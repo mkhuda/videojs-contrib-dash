@@ -174,13 +174,7 @@ class Html5DashJS {
         });
 
       } else {
-        // forward an HTTP error & message
-        if (event.error && event.error.code === 25) {
-          this.player.error({
-            code: 4,
-            message: event.error.message
-          });
-        }
+        // ignore the error
         return;
       }
 
